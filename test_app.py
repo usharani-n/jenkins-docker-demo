@@ -11,7 +11,7 @@ class TestApp(unittest.TestCase):
         response = self.client.get("/")
         self.assertEqual(response.status_code, 200)
         self.assertIn(
-            b"Jenkins CI/CD Pipeline is working.",
+            b"Jenkins CI/CD Pipeline is working automatically.",
             response.data
         )
 
